@@ -1,8 +1,8 @@
 const express = require('express');
 const healthController = require('../controllers/health');
+const authRoutes = require('./auth');
 
 const router = express.Router();
-// Health endpoint
 
 /**
  * @swagger
@@ -31,5 +31,7 @@ const router = express.Router();
  *                   example: development
  */
 router.get('/', healthController.check.bind(healthController));
+
+router.use('/auth', authRoutes);
 
 module.exports = router;
