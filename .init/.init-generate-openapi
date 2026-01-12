@@ -1,0 +1,4 @@
+{
+    "command": "npm install && node generate_openapi.js",
+    "working_directory": "/home/kavia/workspace/code-generation/secure-access-portal-304372-304381/backend_api"
+}
